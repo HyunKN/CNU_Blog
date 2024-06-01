@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       {postList.map(item => (
-        <PostListItem key={item.id} {...item} />
+        <PostListItem key={item.id} id={`${item.id}`} title={item.title} contents={item.contents} tag={item.tag} />
       ))}
     </div>
   );
